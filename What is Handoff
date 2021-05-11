@@ -1,0 +1,27 @@
+Handoff: 
+        While moving from one place to another Mobile signal gets transfer from one Base Station(BS) to another Base Station(BS).
+
+Femtocell: 
+        A femtocell is a small, and low-power cellular base station, typically designed for use in a home or a small business.
+        
+Picocell:
+        A picocell is a small cellular base station typically covering a small area, such as in-building (offices, shopping malls, 
+        train stations, stock exchanges, etc.), or more recently in-aircraft.
+      
+Differenc between Picocell and Femtocell:
+        Cellular systems increase capacity by reusing the same radio frequencies across many cellsites – in dense urban areas that means cellsites with coverage areas of as little as 200 metres. In order to provide adequate capacity, plus good in-building coverage (and thus quality), large numbers of small cellsites are required.
+
+        Macrocells are the original, wide area high power basestations which cover areas up to about 20 miles radius (more in specific situation). In urban areas, a separate layer of microcells is installed to provide the capacity and in-building penetration needed, taking the load off the macrocellular network. For office buildings and
+        shopping malls with extremely high demand, even smaller cellsites are used. All three types of cell operate in a very similar way, and are actively managed and configured by the mobile network operator. Each cell is configured with neighbour lists, so that mobile phones can switch over to an appropriate nearby cell and continue their conversation without interruption.
+  
+        Picocells are normally installed and maintained directly by the network operator, who would pay for site rental, power and fixed network connections back their switching centre.
+
+        Femtocells differ from picocells because they are intended to be much more autonomous. They are self-installed by the end user in their home or office, primarily for their own benefit. Femtocells automatically determine which frequency and power levels to operate at, rather than being directed from a centrally determined master plan. This allows the network to adapt automatically as new femtocells are added or moved without the need for a complete frequency replan.
+
+        The disadvantage is that femtocells would not normally broadcast a list of nearby neighbouring cells. Mobile phones would thus maintain the connection on the femtocell as much as possible, but risk dropping the call or having an short outage if the call needs to be switched across to an external macro or microcell.
+
+        Femtocell vendors have been promoting the use of their products within the enterprise, in order to displace picocells. Their arguments are based on lower operational costs (ease of installation, ongoing maintenance etc.). The business case for femtocells in the enterprise is potentially stronger than for picocells, because of the lower installation and ongoing operational costs. It would piggyback on the existing IP network infrastructure provided by the business IT department, 
+        who could use mechanisms to prioritise the traffic above mainstream data traffic to ensure high voice quality. Corporations would expect to benefit from lower cost calls within their enterprise locations in return for installing and maintaining these systems, which would also be offset by not requiring fixed phones at the desk.
+        
+        
+ 
