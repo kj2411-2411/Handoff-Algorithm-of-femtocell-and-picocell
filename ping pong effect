@@ -1,1 +1,11 @@
+Networks in reality, experience a variation in the power of the signal received. This is due to rapid fading of signals and other associated environmental alterations. 
+These variations do not correspond with any recognized pattern involving movement of a particular UE. 
+Hence, the nature of UE movement and the fluctuation of signal strength over time could lead to repeated handovers between two neighbouring cells in short time span. 
+This repeated and sometimes unnecessary handovers is referred to as Ping-Pong handover (PPH).
+In the area where margin is not properly defined for hysteresis between the potential serving cells, ping pong handover occurs. 
+In this zones during ping pong HO traffic will shift forwards and backwards between 2 or more cells until settling on to intended candidate cell.
+In this type of ping pong HO, mobile will usually carry out 5 handovers in each direction before it settles on new cell. 
+
+This results into increase of signal loading by factor of 5. Hence potential for dropped calls will increase and quality degradation will also increase.
+HPP ratio = no. of ping-pong HO/ no. of total HO
 
