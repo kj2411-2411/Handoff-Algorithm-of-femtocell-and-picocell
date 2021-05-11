@@ -1,1 +1,41 @@
+SINR CALCULATION ANALYSIS FOR HANDOFF ALGORITHM IN FEMTOCELL AND MACROCELL NETWORKS
+   -  INPUTS TAKEN:
+m0  = current Macrocell in which operation takes place
+f0  = current femtocell
+N = noise power
+N = N0B
+B is the bandwidth
+N0 = -174 dBm/Hz (constant value)
+RSPm0 = Received signal power for current Macocell
+RSPf0 = Received signal power for current Femtocell
+-MATHEMATICAL FORMULAS FOR INDIVIDUAL SINR’S:
+SINRm = RSPm0/(N + ∑RSPm + ∑RSPf)
+SINRf = RSPf0/(N + ∑RSPf + ∑RSPm)
+CRITERION FOR SINR:
+Macrocell to Femtocell handoff:
+SINRf  > SINRm
+-ANALYSIS OF SINR (AFTER HAND IN) FOR FEMTOCELL USERS IN MACRO-FEMTO LTE NETWORKS:
+SINR(after hand in) = P/(I + N)
+P : Received power that represents ratio between transmitted power of senders s(ψs) 
+PLs,r :path loss between sender and receiver
+P = ψs/(PLs,r)
+I : The interference power of other simultaneous transmissions that use same resources as senders
+N: Noise power,for LTE networks it is a constant value of -121.45dBm
+
+
+-Frequency of occurrence:
+The frequency of occurrence comes into picture when the database is full.When a Handoff is requested by the user, a location finger-print is sent along with the measurement report.
+The database is then checked for matches.
+Nd = Number of similar entries
+ds = size of the database
+Pfoc = frequency of occurrence
+Pfoc = Nd/ds
+-A high value of Pfoc implies that it is a zone of frequent handoff.
+-Pfoc  and HMad are inversely proportional to each other.
+The Ad-Hoc hysteresis margin effect can be expressed as:
+HMad  = (1 - Pfoc) HMmax 
+HMmax  = optimized value of hysteresis margin
+For Macrocell MME (Mobility Management entity) checks the database to find matches and Femto gateway checks in case of femtocell.
+
+ 
 
