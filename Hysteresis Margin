@@ -1,1 +1,22 @@
+Usually the level of the hysteresis is constant.
+The adaptive hysteresis margin (HM) is based on the modification of actual HM value according to the position of the user in the cell.
+The HM is decreasing with UE’s moving closer to the cell border. 
+The border of cells are neither regular circles nor hexagons since the system is not distance or signal level limited but it is interference limited. 
+Therefore, the shape of the cells is strongly influenced also by the interference.
+Therefore we propose to implement (Signal to interference plus noise ratio) SINR instead of (received signal strength indicator) RSSI for calculation of the actual level of HM.
+A signal level influenced by the interference and noise (IN) can be described according to the next equation:  
+IN RSSI  IN  PL  TPst SINR  
+TPst is transmission power of the station of interest. The SINR level is in different range of values than RSSI. 
+Immediately it has to be related to the difference between maximum and minimum SINR in the observed area. Thus, the actual HM level according to SINR is derived as follows:
+HM = max {HMmax * ( 1 – 10^((SINRact – SINRmin )/(SINRmin – SINRmax)) ^ exp ; HMmin }
+Where act SINR the actual SINR is measured by a UE; SINRmin and max SINR are minimum and maximum values in the investigated area respectively, 
+exp represents the exponent equal to 4 and HM min is the minimum HM that can be set up equal to 0 . The actual SINR of UE can be easily measured during UE’s operation.
+It is usually performed with the purpose of handover decision and initiation. However, also the minimum and maximum SINR values also have to be known for the utilization of the adaptive HM.
+SINRmin corresponds to the cell radius and to the SINR level, at which the UE is able to receive data. Therefore, it is set up as a fix value for each FAP and BS. The max SINR can be determined by two ways: 1) measurement of SINR by a FAP at the point of its location;
+or 2) monitoring and reporting of SINR by all UEs connected to the given FAP and than selecting the highest SINR from all known values as the max SINR. The first way implies to equip all FAPs with ability to measure SINR.
+Calculation of adhm in terms of rssi :
+  
+𝐻𝑀 = 𝑚𝑎𝑥 {𝐻𝑀max × [1 – 𝑑/R ] ^4 ; 0}
+For a hexagonal cell R = Dc / √3
+where Dc is the distance between two base stations.
 
