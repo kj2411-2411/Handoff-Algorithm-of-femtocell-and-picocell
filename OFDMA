@@ -1,1 +1,19 @@
+OFDMA allows multiple clients to transmit or receive from an Access Point at the same time by sharing available bandwidth. 
+OFDMA’s spectral efficiency improves transmission latency or delay in RF environment, which has moderate to high congestion level. 
+Additionally, it will also increase throughput in certain Wi-Fi 6 deployments due to reduction in collisions and contention time.
+Network congestion caused by simultaneous requests causes slowdowns, since clients must form a queue to complete transmissions. 
+OFDMA solves the congestion problem by accommodating multiple users at the same time and allocating bandwidth more efficiently.
+One way to understand OFDMA is to use delivery trucks as an analogy.
+With Wi-Fi 5, each "truck" could carry only a single user's cargo. But with Wi-Fi 6 and OFDMA, the truck can be loaded with multiple users' cargo loads.
+Also, its drop-off schedule can be optimized for speed and efficiency.
+OFDMA divides a Wi-Fi channel into smaller frequency allocations, called resource units (RUs). 
+An access point can communicate with multiple clients by assigning them to specific RUs.
+Wi-Fi 5 divides channels into 64 312.5-kHz subcarriers, all of which are used to transmit data to a single client. 
+By spacing these carriers orthogonally, OFDMA allows Wi-Fi 6 to divide channels into smaller units without interference.
+The number of RUs assigned to each client is determined by factors such as device constraints, quality-of-service (QoS) requirements, and packet size.
+The flexibility in scheduling along with the parallel nature of OFDMA increases the productive Air Time efficiency.
+Attributes of OFDMA :
+•	High throughput
+•	Low latency
+•	Low power consumption
 
