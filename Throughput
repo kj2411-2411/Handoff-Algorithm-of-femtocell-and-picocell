@@ -1,1 +1,19 @@
+Network throughput refers to how much data can be transferred from source to destination within a given timeframe. 
+Throughput measures how many packets arrive at their destinations successfully. 
+For the most part, throughput capacity is measured in bits per second, but it can also be measured in data per second. 
+
+The throughput of the MiBS is calculated as, 
+Tmicro = ∑j ∑n pmi,j,n Cmi,j,n 
+where pmi,j,n is the probability of assigning a subcarrier n to a MiBS user j and Cmi,j,n is the capacity of a MiBS user j on the subcarrier n.
+
+
+The throughput of the FBS is calculated as,
+Tfemto = ∑j∑n pf,j,n Cf,j,n
+where pf,j,n is the probability of assigning a subcarrier n to a FBS user j and Cf,j,n is the capacity of a FBS user j on the subcarrier n. 
+
+
+The throughput of the microcell-femtocell network is given as,
+ Tmicro-femto = p1*Tmicro + p2*Tfemto 
+Where p1 and p2 are the probabilities of using MiBS and FBS, respectively.
+
 
