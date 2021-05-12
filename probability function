@@ -1,0 +1,21 @@
+TD and  TR  are independent random variables. TD denotes session duration which is exponentially distributed with mean 1/ᶯ and the probability density function of this session duration is:
+fTD (t) = Ƞe-Ƞt
+TR is the duration of a UE being within the coverage area of a femtocell which is exponentially distributed with mean 1/µ and the probability density function of this duration of stay is fTR(t) = µe-µt
+Popenmacro –to-femto = Pr1 + Pr2 +Pr4
+Popenfemto-to-macro = Pr1 + Pr3 + Pr6
+and 
+Popenfemto-to-femto = Pr4 +Pr5 + Pr6 + Pr7 + Pr8
+Popenmacro-to-femto = 2Pr1 + Pr2
+Popenfemto-to-macro = 2Pr1 + Pr3
+Popenfemto-to-femto = 3Pr1 + Pr2 + Pr3
+Pr1 = P(A1 < t1 < A1 + TD) P(TDR > TR)
+Pr2 = P(A1<t1<A1+TD) = P(TDR <=TD)
+Pr3 = P(t1<A1<t1+TR)P(TD>=TRr)
+
+Pr1 = ʃ0∞ʃt∞λe-λtfDR(t)dxdt), = (1 - ʃ0∞ʃt∞µe-µxfDR(t)dxdt),
+Pr2 = ʃ0∞ʃt∞λ-λtfTD(x)dxdt = (1 - ʃ0∞ʃt∞Ƞe-ȠtfDR(y)dydt)
+and
+Pr3 = ʃ0∞λte-λtfRr(t)dydt = ʃ0∞ʃt¬∞Ƞe-ȠyfRr(t)dydt
+Pr1 = λµ/[(λ + Ƞ)2(µ + Ƞ)]
+Pr2 =λȠ/[(λ+Ƞ)2(µ+Ƞ)]
+Pr3 = λµ2/[(λ+Ƞ)2(µ+Ƞ)]
