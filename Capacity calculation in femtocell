@@ -1,1 +1,14 @@
+Here an LTE OFDMA-FDD system is considered with system bandwidth W which is divided into NRB resource blocks(RBs), each of bandwidth WRB such that 
+W= NRB*WRB 
+ Where the RB represents the basic OFDMA time frequency unit. Two RBs comprise one subframe and ten subframes together make one LTE frame. Universal frequency reuse is considered, 
+ so that both macro and femto-cells utilise the entire system bandwidth W, in the uplink (UL) and DL. The received UL or DL signal power associated with UE u on RB n, Yu n is given by
+ Y u n = Pu n Σ Gu m, vu n + In u + ηRB  
+Where Gu m, vu n is the channel gain between UE u and its serving HeNB or eNB vu, observed at receive antenna m and at RB n.
+Furthermore, ηRB accounts for thermal noise per RB which 22 is constant across all RBs and both directions of communication. In the DL, the transmit power is set to Pu n= PeNB and Pu n = PHeNB if UE u is served by an eNB or HeNB, respectively.
+In the UL, Pu n = PFUE or Pu n = PMUE, depending on whether the UE in question is served by a HeNB or an eNB, respectively. The values PHeNB, PeNB, PMUE and PFUE are constant across all RBs. The aggregate interference Iu n is composed of macro and femto-cell interference .
+ In u = Σ Gu m, i n Pm + Σ Gu m, i n Pf iϵMint iϵFint 
+where the first and second addends represent the macro and femto-cell interference, respectively. Here, Pm is set respectively to PeNB and PMUE in the DL and UL. Similarly, Pf is set respectively to PHeNB and PFUE in the DL and UL. Mint represents the set of interfering macro UEs in the UL and the set of interfering eNBs in the DL. 
+Similarly, Fint denotes the set of interfering femto Ues in the UL and the set of interfering HeNBs in the DL. The SINR observed in the UL or DL with regards to UE u on RB n,
+ Γn u = Pn u Σ Gm u ,n vu  In u + ηRB 
+sThus the capacity Cu is calculated by shannon’s law Cu = Σ WRB. log2(1+ γn u )
 
