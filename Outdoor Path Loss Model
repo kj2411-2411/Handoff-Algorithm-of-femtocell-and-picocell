@@ -1,1 +1,42 @@
+Outdoor path loss model = 
+Option we had= 
+1.	Okumura model.      
+2.	Hata model.
+3.	Cost 231 model. 
+4.	UMI model.  
+We Choose Hata model, well it doesn’t go beyond 1500MHz but it is available for urban/small or medium sized city/large cities. 
+It does not provide coverage to the whole range of frequencies covered by okumura model, but it is suited for both point and broadcast communication, and 
+it is flexible as well.  
+Equations = 
+Hata Model path loss equations =  
+L50 (Urban) (db) = 69.55 + 26.16 log 10 fc -13.82 log 10 (hb) – a (hm) + (44.9 – 6.55 log 10 hb) log10 d 
+For small or medium sized city = 
+Mobile antenna correlation factor = 
+A (hm) =(1.1log10 fc – 0.7)hm –(1.56 log10 fc – 0.8)dB 
+ For large city(dense urban) = 
+a (hm) = 3.2 (log10 11.75 hm)2 – 4.97 db      for fc > 300MHz 
+a (hm) = 8.29 (log10 1.54 hm)2 – 1.1 dB       for fc < 300 MHz 
+where, 
+fc = Carrier frequency (MHz) 
+hb = Base station antenna height (In m) 
+hm = mobile antenna height (m) 
+d = Base station to mobile distance 
+a(hm) = correlation factor 
+ Input  
+1.	Type of city. 
+2.	Height of transmitting antenna. 
+3.	Height of receiving antenna. 
+4.	Frequency. 
+OUTPUT = 
+Path loss in db. 
+Use = 
+This will help us to find out the path
+
+ 
+                                                  
+   
+
+
+                                                                     
+
 
