@@ -1,1 +1,42 @@
+RSSI = 
+Received signal strength indicator 
+•	Macro – Femto Handoff : To offload traffic from macrocell network in order to avoid network congestion. 
+•	Femto – Macro Handoff : To provide seamless mobility management and better QOS while the indoor signal is poor and the macrocell network is not congested. 
+•	Wheather we need to handover or not is decided by using RSSI values 
+
+Macro – to – Femto 
+If RSSIf > Tn or RSSSm < RSSI min and RSSIf >RSSIm + hmmax then 
+Handoff to femto cell 
+Else: 
+Stay in macrocell. 
+End: 
+Femto to macro Ho decision. 
+   If RSSIf < Tn or RSSSm > RSSI min and RSSIf  + Hmmax < Th then 
+Ho to macrocell  
+Else 
+Stay in Femto cell 
+End 
+RSSIm  : Received signal strength indicator for macrocell. 
+RSSIf  : Received signal strength indicator for fem to cell 
+RSSI min : Received signal strength indicator for min macrocell 
+Th : Threshold for femtocell. 
+Hmmax  : Optimized value of hysteresis margin. 
+MME : Mobility management entity. 
+FGW : Femto gateway.
+PCI : Physical cell entity. 
+Macro – to  - femito      Ho – decision algorithm : 
+If RSSIf > Th or RSSIm < RSSImin and  RSSIf  > RSSIm + hmad 
+Then, 
+Hoto femto cell 
+Else , 
+Stay in macrocell 
+End. 
+Femto – to – Macro Ho –decision algorithm : 
+If RSSIf  < Th or RSSSm > RSSI min and RSSIf  + hmad < Th 
+Then , 
+Ho to macrocell 
+Else , 
+Stay in femto cell 
+End.
+     
 
